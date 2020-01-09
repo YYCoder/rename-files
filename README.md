@@ -1,6 +1,8 @@
 # rename-files
 Rename batch of files interactively using JXA 😁~
 
+> Inspired by dtinth's [Batch File Rename](https://gist.github.com/dtinth/93e230152a771dcb1ec5).
+
 ### What is JXA
 It's OS X automation, using Javascript.
 
@@ -9,14 +11,33 @@ For using JXA language, Mac OS X Yosemite is required.
 
 Since OS X 10.10 (Yosemite), Javascript (called Javascript for Automation, or JXA) is also supported for app automation.
 
-### Installation and usage
+### Installation
 1. `git clone git@github.com:YYCoder/rename-files.git`: clone this repository
 
 2. `yarn build`: bundle typescript files to JXA
    
    > `yarn build` will generate a JXA script named `index.scpt` at your current working dictionary.
 
-3. use `osascript` to run it or add it to Mac Service also you can save it as an app
+3. add it to OS X Service or you can save it as an app, also just use `osascript` to run it
+
+### How to use it
+
+1. First step, select files
+    ![](https://markey-oss1.oss-cn-beijing.aliyuncs.com/rename-files/Lark20200109184914.png)
+
+2. Next, there are two ways to rename files, as follows
+    ![](https://markey-oss1.oss-cn-beijing.aliyuncs.com/rename-files/Lark20200109192856.png)
+
+    1. you can simply write JavaScript code in the input, and this program will run it as a function, which return the new name. For example:
+        ![](https://markey-oss1.oss-cn-beijing.aliyuncs.com/rename-files/Lark20200109192932.png)
+    
+    2. you can click the **Case** button, then you will see this dialog:
+        ![](https://markey-oss1.oss-cn-beijing.aliyuncs.com/rename-files/Lark20200109192953.png)
+
+3. Then, you will see the diff dialog:
+    ![](https://markey-oss1.oss-cn-beijing.aliyuncs.com/rename-files/Lark20200109193039.png)
+
+4. Press the confirm button, that's it!
 
 
 ### Development
