@@ -18,7 +18,7 @@ Since OS X 10.10 (Yosemite), Javascript (called Javascript for Automation, or JX
    
    > `yarn build` will generate a JXA script named `index.scpt` at your current working dictionary.
 
-3. add it to OS X Service or you can save it as an app, also just use `osascript` to run it
+3. [add it to OS X Service](https://developer.apple.com/library/archive/documentation/LanguagesUtilities/Conceptual/MacAutomationScriptingGuide/MakeaSystem-WideService.html#//apple_ref/doc/uid/TP40016239-CH46-SW1) or you can save it as an app, also just use `osascript` to run it
 
 ### How to use it
 1. First step, select files:<br><img src="https://markey-oss1.oss-cn-beijing.aliyuncs.com/rename-files/Lark20200109184914.png" width="450" />
