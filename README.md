@@ -1,2 +1,2 @@
 # rename-files
-rename batch of files using JXA
+Rename batch of files interactively using JXA 😁~

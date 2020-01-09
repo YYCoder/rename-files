@@ -1,0 +1,34 @@
+{
+  "name": "rename-files",
+  "version": "0.1.0",
+  "description": "Rename batch of files interactively using JXA 😁~",
+  "main": "./src/index.js",
+  "scripts": {
+    "dev": "ts-jxa ./src/index.ts --dev",
+    "build": "ts-jxa ./src/index.ts --prod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YYCoder/rename-files.git"
+  },
+  "keywords": [
+    "applescript",
+    "osa",
+    "jxa",
+    "typescript"
+  ],
+  "author": "Markey <https://github.com/YYCoder>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YYCoder/rename-files/issues"
+  },
+  "homepage": "https://github.com/YYCoder/rename-files#readme",
+  "devDependencies": {
+    "@jxa/global-type": "^1.3.1",
+    "ts-jxa": "^0.1.0",
+    "typescript": "^3.7.4"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15"
+  }
+}

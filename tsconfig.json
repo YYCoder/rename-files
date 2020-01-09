@@ -1,0 +1,39 @@
+{
+    "compileOnSave": false,
+    "compilerOptions": {
+        "outDir": "./dist",
+        "watch": false, // 在监视模式下运行编译器。会监视输出文件，在它们改变时重新编译
+        "help": true, // 打印帮助信息
+        "strict": false, // 启用所有严格类型检查选项
+        "strictNullChecks": true, // 是否禁用给类型指定为 null、undefined
+        "target": "ES5", // 指定 ECMAScript 目标版本 "ES3"（默认）
+        "module": "CommonJS", // 指定生成哪个模块系统代码： "None"， "CommonJS"， "AMD"， "System"， "UMD"， "ES6"或 "ES2015"
+        "jsx": "react", // https://www.tslang.cn/docs/handbook/jsx.html
+        "allowJs": true, // 允许编译 .js 文件
+        "traceResolution": false, // 展示模块解析详情
+        "moduleResolution": "node", // 模块解析策略，存在 classic 和 node 两种，https://www.tslang.cn/docs/handbook/module-resolution.html
+        "allowSyntheticDefaultImports": true, // 允许从没有设置默认导出的模块中默认导入。这并不影响代码的输出，仅为了类型检查
+        "noUnusedLocals": false, // 若有未使用的局部变量则抛错
+        "noImplicitAny": false, // 在表达式和声明上有隐含的 any类型时报错
+        "noUnusedParameters": false, // 若有未使用的局部变量则抛错
+        "removeComments": false, // 删除所有注释，除了以 /!*开头的版权信息
+        "preserveConstEnums": true, // 保留 const 及 enum 声明
+        "sourceMap": true, // 生成相应的 .map 文件
+        "skipLibCheck": false, // 忽略所有的声明文件（*.d.ts）的类型检查
+        // 默认会查找当前目录及祖先目录的 node_modules/@types 中的文件，指定了该项后，只会查找指定的目录
+        "typeRoots": [
+            "./node_modules/@types"
+        ],
+        // 编译过程中需要引入的库文件的列表
+        "lib": [
+            "dom",
+            "es2015",
+            "es2016",
+            "es2017"
+        ]
+    },
+    "exclude": [
+        "node_modules",
+        "dist"
+    ]
+}
