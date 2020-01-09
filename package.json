@@ -2,7 +2,7 @@
   "name": "rename-files",
   "version": "0.1.0",
   "description": "Rename batch of files interactively using JXA 😁~",
-  "main": "./src/index.js",
+  "main": "./index.scpt",
   "scripts": {
     "dev": "ts-jxa ./src/index.ts --dev",
     "build": "ts-jxa ./src/index.ts --prod"

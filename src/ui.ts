@@ -1,9 +1,9 @@
 export const prompt = (app, text, defaultAnswer = '') => {
     const options = {
         defaultAnswer,
-        buttons: ['确认', '取消', '修改大小写'],
-        defaultButton: '确认',
-        cancelButton: '取消'
+        buttons: ['confirm', 'cancel', 'Case'],
+        defaultButton: 'confirm',
+        cancelButton: 'cancel'
     };
     try {
         return app.displayDialog(text, options);
@@ -30,7 +30,7 @@ export const confirm = (app, text) => {
 export const chooseCase = (app, list) => {
     try {
         return app.chooseFromList(list, {
-            withPrompt: '请选择要转换的大小写格式',
+            withPrompt: 'please choose which case you prefer',
             defaultItems: [list[0]]
         });
     } catch(e) {
