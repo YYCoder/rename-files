@@ -21,21 +21,15 @@ Since OS X 10.10 (Yosemite), Javascript (called Javascript for Automation, or JX
 3. add it to OS X Service or you can save it as an app, also just use `osascript` to run it
 
 ### How to use it
+1. First step, select files:<br><img src="https://markey-oss1.oss-cn-beijing.aliyuncs.com/rename-files/Lark20200109184914.png" width="450" />
 
-1. First step, select files
-    ![](https://markey-oss1.oss-cn-beijing.aliyuncs.com/rename-files/Lark20200109184914.png)
+2. Next, there are two ways to rename files, as follows\:<br><img src="https://markey-oss1.oss-cn-beijing.aliyuncs.com/rename-files/Lark20200109192856.png" width="450" />
 
-2. Next, there are two ways to rename files, as follows
-    ![](https://markey-oss1.oss-cn-beijing.aliyuncs.com/rename-files/Lark20200109192856.png)
+    1. you can simply write JavaScript code in the input, and this program will run it as a function, which return the new name. For example\:<br><img src="https://markey-oss1.oss-cn-beijing.aliyuncs.com/rename-files/Lark20200109192932.png" width="450" />
 
-    1. you can simply write JavaScript code in the input, and this program will run it as a function, which return the new name. For example:
-        ![](https://markey-oss1.oss-cn-beijing.aliyuncs.com/rename-files/Lark20200109192932.png)
-    
-    2. you can click the **Case** button, then you will see this dialog:
-        ![](https://markey-oss1.oss-cn-beijing.aliyuncs.com/rename-files/Lark20200109192953.png)
+    2. you can click the **Case** button, then you will see this dialog:<br><img src="https://markey-oss1.oss-cn-beijing.aliyuncs.com/rename-files/Lark20200109192953.png" width="450" />
 
-3. Then, you will see the diff dialog:
-    ![](https://markey-oss1.oss-cn-beijing.aliyuncs.com/rename-files/Lark20200109193039.png)
+3. Then, you will see the diff dialog:<br><img src="https://markey-oss1.oss-cn-beijing.aliyuncs.com/rename-files/Lark20200109193039.png" width="450" />
 
 4. Press the confirm button, that's it!
 
