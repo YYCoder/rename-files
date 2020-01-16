@@ -58,8 +58,8 @@ try {
             const rawName = item.name();
             const hasExt = rawName.includes('.');
             // 多级拓展名不转换
-            const name = rawName.replace(/\.[\w\-\_]+/g, '');
-            const ext = hasExt ? rawName.replace(/^[\w\-\_]+\./, '') : '';
+            const name = rawName.split('.')[0];
+            const ext = hasExt ? rawName.split('.').slice(1).join('.') : '';
             let target = '';
             const from = hasExt ? `${name}.${ext}` : name;
             let to = '';
