@@ -44,8 +44,8 @@ const {
 );
 let fn: any = () => {};
 if (btn === 'Case') {
-    const selectCase = chooseCase(app, CASE_LIST);
-    fn = (name) => CASE_MAP[selectCase](name);
+    const selectedCase = chooseCase(app, CASE_LIST);
+    fn = (name) => CASE_MAP[selectedCase](name);
 }
 else {
     fn = new Function('name', code);
@@ -57,26 +57,27 @@ try {
         .map((item) => {
             const rawName = item.name();
             const hasExt = rawName.includes('.');
-            // 多级拓展名不转换
-            const name = rawName.split('.')[0];
-            const ext = hasExt ? rawName.split('.').slice(1).join('.') : '';
             let target = '';
-            const from = hasExt ? `${name}.${ext}` : name;
-            let to = '';
             try {
-                target = fn(name);
-                to = hasExt ? `${target}.${ext}` : target;
+                if (btn === 'Case') {
+                    // 多级拓展名不转换，只在选择大小写格式时使用
+                    const name = rawName.split('.')[0];
+                    const ext = hasExt ? rawName.split('.').slice(1).join('.') : '';
+                    target = fn(name) + '.' + ext;
+                }
+                else {
+                    target = fn(rawName);
+                }
             } catch (e) {
-                throw new Error('can\'t rename file: "' + name + '": ' + e);
+                throw new Error('can\'t rename file: "' + rawName + '": ' + e);
             }
             if (!target) {
-                throw new Error('can\'t rename file: "' + name + '", because expression returned empty value');
+                throw new Error('can\'t rename file: "' + rawName + '", because expression returned empty value');
             }
             return {
                 item,
-                ext,
-                from,
-                to
+                to: target,
+                from: rawName
             };
         })
         .filter((task) => task.from != task.to);
