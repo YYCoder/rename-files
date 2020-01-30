@@ -36,11 +36,11 @@ const {
     buttonReturned: btn,
     textReturned: code
 } = prompt(
-    app, 
+    app,
     `change to what ? there are two ways as follows:
     1. js code: name variable is the current file name
     2. click Case button: will give you several frequently-used case to choose, so you don't have to write code`,
-    'return name;'
+    'return name.replace(//);'
 );
 let fn: any = () => {};
 if (btn === 'Case') {
