@@ -7,8 +7,9 @@ Rename batch of files interactively using JXA 😁~
 
 ### Installation
 1. `git clone git@github.com:YYCoder/rename-files.git`: clone this repository
-
-2. `yarn build`: bundle typescript files to JXA
+1. `cd rename-files`: change directory
+1. `npm install`: install dependencies
+1. `yarn build`: bundle typescript files to JXA
    
    > `yarn build` will generate a JXA script named `index.scpt` at your current working dictionary.
 
